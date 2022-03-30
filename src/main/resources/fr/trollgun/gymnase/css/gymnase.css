@@ -1,0 +1,256 @@
+.navbar {
+    -fx-background-color: -fx-first-color;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+    -fx-background-radius: 0px 0px 8px 8px;
+}
+
+.navbar .button {
+    -fx-background-color: none;
+    -fx-padding: 5;
+    -fx-pref-height: 50;
+    -fx-font-family: "Source Sans Pro";
+    -fx-text-fill: -fx-light-color-text;
+    -fx-font-size: 20px;
+}
+
+.navbar .button:hover, .navbar .button:focused{
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-fourth-color, -fx-second-color);
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+
+.navbar .button:pressed {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-second-color, -fx-fourth-color);
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+.anchor-pane {
+    -fx-background-color: -fx-second-color;
+}
+
+.anchor-preview {
+    -fx-background-color: -fx-fifth-color;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+}
+
+.anchor-view {
+    -fx-background-color: -fx-third-color;
+    -fx-background-radius: 8px;
+}
+
+.table-view {
+    -fx-background-color: -fx-second-color;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+}
+
+.table-column {
+    -fx-padding: 0.0em;
+    -fx-text-background-color: -fx-light-color-text;
+}
+
+.table-view .column-header {
+    -fx-background-color: -fx-second-color;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+    -fx-alignment: CENTER;
+    -fx-text-background-color: -fx-dark-color-text;
+}
+
+.table-row-cell:hover, .table-row-cell:focused {
+    -fx-border-color: -fx-first-color;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-fifth-color;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:even {
+    -fx-background-color: -fx-fourth-color;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-text-fill: black;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-color: -fx-second-color;
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-color: -fx-second-color;
+}
+
+.button {
+    -fx-background-color: -fx-fourth-color;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+}
+
+.button:hover, .button:focused {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-third-color, -fx-second-color);
+}
+
+.button:pressed {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-second-color, -fx-third-color);
+    -fx-text-fill: -fx-light-color-text;
+}
+
+
+.text-field {
+    -fx-background-color: -fx-fifth-color;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+    -fx-text-fill: -fx-dark-color-text;
+}
+
+.text-field:disabled{
+    -fx-text-fill: -fx-light-color-text;
+}
+
+.combo-box {
+    -fx-background-color: -fx-fourth-color;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+    -fx-text-alignment: center;
+}
+
+.combo-box:hover, .combo-box:focused {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-third-color, -fx-second-color);
+}
+
+.combo-box:pressed {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-second-color, -fx-third-color);
+}
+
+
+.combo-box-popup .list-view {
+    -fx-background-color: -fx-fourth-color;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: -fx-fourth-color;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover, .combo-box-popup .list-view .list-cell:filled:selected:focused {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-first-color, -fx-fourth-color);
+    -fx-text-fill: -fx-fifth-color;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover, .combo-box-popup .list-view .list-cell:filled:focused {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-fourth-color, -fx-first-color);
+    -fx-text-fill: -fx-fifth-color;
+}
+
+.date-picker {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-third-color, -fx-second-color)
+}
+
+.date-picker:hover {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-third-color, -fx-second-color)
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: -fx-fourth-color;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+}
+
+.date-picker:focused > .arrow-button, .date-picker:hover > .arrow-button {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, -fx-third-color, -fx-second-color);
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+}
+
+.home {
+    -fx-shape: "M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z";
+    -fx-background-color: -fx-light-color-text;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+}
+
+.save {
+    -fx-shape: "M402.115,84.008L323.088,4.981C319.899,1.792,315.574,0,311.063,0H17.005C7.613,0,0,7.614,0,17.005v373.086 c0,9.392,7.613,17.005,17.005,17.005h373.086c9.392,0,17.005-7.613,17.005-17.005V96.032 C407.096,91.523,405.305,87.197,402.115,84.008z M300.664,163.567H67.129V38.862h233.535V163.567z";
+    -fx-background-color: -fx-light-color-text;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+}
+
+.down-arrow {
+    -fx-shape: "M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z";
+    -fx-background-color: -fx-light-color-text;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+    -fx-rotate: 180;
+}
+
+.up-arrow {
+    -fx-shape: "M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394 l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393 C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z";
+    -fx-background-color: -fx-light-color-text;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 1, 0, 0, 1);
+}
+
+.svg{
+    -fx-color: -fx-light-color-text;
+}
+
+.label-title{
+    -fx-text-fill: -fx-light-color-text;
+    -fx-font-weight: bold;
+}
+
+.root {
+    /*
+    -fx-first-color: #420B14;
+    -fx-second-color: #8A1C2E;
+    -fx-third-color: #BA364C;
+    -fx-fourth-color: #CF5F72;
+    -fx-fifth-color: #D17988;
+    */
+    /*
+        -fx-first-color: #3C1518;
+        -fx-second-color: #69140E;
+        -fx-third-color: #A44200;
+        -fx-fourth-color: #D58936;
+        -fx-fifth-color: #F2F3AE;
+
+     */
+
+    -fx-first-color: #077e7b;
+    -fx-second-color: derive(-fx-first-color, 10%);
+    -fx-third-color: derive(-fx-first-color, 30%);
+    -fx-fourth-color: derive(-fx-first-color, 80%);
+    -fx-fifth-color: derive(-fx-first-color, 90%);
+
+    -fx-light-color-text: -fx-fifth-color;
+    -fx-dark-color-text: -fx-first-color;
+
+}

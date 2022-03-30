@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="anchor-view"
+            stylesheets="@css/gymnase.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="fr.trollgun.gymnase.controller.SportController">
+    <children>
+        <TableView fx:id="tableViewSport" layoutX="36.0" layoutY="36.0" prefHeight="200.0" prefWidth="527.0">
+            <columns>
+                <TableColumn fx:id="tableColumnSport" prefWidth="526.2000122070312" resizable="false" text="Sports"/>
+            </columns>
+        </TableView>
+        <TextField fx:id="txtFieldTypeSports" layoutX="226.0" layoutY="287.0" promptText="Exemple : Tennis"/>
+        <Label layoutX="226.0" layoutY="270.0" text="Sports : "/>
+        <Button fx:id="buttonAjouter" layoutX="257.0" layoutY="330.0" mnemonicParsing="false"
+                onAction="#onClickAjouterSports" prefHeight="26.0" prefWidth="86.0" styleClass="button-1"
+                text="Ajouter"/>
+    </children>
+</AnchorPane>

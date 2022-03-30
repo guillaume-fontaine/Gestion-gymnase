@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="anchor-view" stylesheets="@css/gymnase.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.trollgun.gymnase.controller.PratiquerController">
+    <children>
+        <TableView fx:id="tableViewPratiquer" layoutX="42.0" layoutY="42.0" prefHeight="234.0" prefWidth="512.0">
+            <columns>
+                <TableColumn fx:id="tableColumnPratiquerAssociation" prefWidth="263.20001220703125" text="Association" />
+                <TableColumn fx:id="tableColumnPratiquerSport" prefWidth="263.199951171875" text="Sport" />
+            </columns>
+        </TableView>
+        <Button fx:id="buttonPratiquerAjouter" layoutX="454.0" layoutY="299.0" mnemonicParsing="false" onAction="#onClickAjouterPratiquer" prefHeight="30.0" prefWidth="100.0" styleClass="button-1" text="Ajouter" />
+        <Button fx:id="buttonPratiquerSuppirmer" layoutX="454.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClickSuppirmerPratiquer" prefHeight="30.0" prefWidth="100.0" styleClass="button-1" text="Supprimer">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Button>
+        <ComboBox fx:id="comboBoxAssociation" layoutX="43.0" layoutY="302.0" prefWidth="150.0" />
+        <ComboBox fx:id="comboBoxSport" layoutX="248.0" layoutY="302.0" prefWidth="150.0" />
+        <Label layoutX="43.0" layoutY="284.0" text="Association :" />
+        <Label layoutX="248.0" layoutY="284.0" text="Sports :" />
+    </children>
+</AnchorPane>

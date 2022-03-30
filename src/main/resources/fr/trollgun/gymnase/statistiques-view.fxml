@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="anchor-view" stylesheets="@css/gymnase.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.trollgun.gymnase.controller.StatistiquesController">
+    <children>
+        <Label layoutX="216.0" layoutY="21.0" styleClass="label-title" text="Statistiques des Associations">
+        </Label>
+        <Line endX="406.0" layoutX="147.0" layoutY="54.0" startX="-100.0" stroke="WHITE" />
+        <Label layoutX="151.0" layoutY="78.0" styleClass="label-title" text="L'association : ">
+        </Label>
+        <ComboBox fx:id="comboBoxAsso" layoutX="297.0" layoutY="74.0" onAction="#onActionComboBoxAsso" prefWidth="150.0" promptText="Sélectionner..." />
+        <Label layoutX="151.0" layoutY="114.0" styleClass="label-title" text="Référence : ">
+        </Label>
+        <Label fx:id="labelReference" layoutX="296.0" layoutY="115.0" text="--------------------------------">
+        </Label>
+        <Label layoutX="150.0" layoutY="147.0" styleClass="label-title" text="Ville : ">
+        </Label>
+        <Label fx:id="labelVille" layoutX="296.0" layoutY="148.0" text="--------------------------------">
+        </Label>
+        <Label layoutX="150.0" layoutY="180.0" styleClass="label-title" text="Adresse : ">
+        </Label>
+        <Label fx:id="labelAdresse" layoutX="296.0" layoutY="181.0" text="--------------------------------" />
+        <Label layoutX="151.0" layoutY="212.0" styleClass="label-title" text="Responsable :" />
+        <Label fx:id="labelResponsable" layoutX="296.0" layoutY="214.0" text="--------------------------------">
+        </Label>
+        <Line endX="406.0" layoutX="147.0" layoutY="262.0" startX="-100.0" stroke="WHITE" />
+        <Label layoutX="151.0" layoutY="284.0" styleClass="label-title" text="Sport Pratiquer : ">
+        </Label>
+      <Label fx:id="labelSportPratiquer" layoutX="296.0" layoutY="286.0" text="--------------------------------" />
+        <Label layoutX="151.0" layoutY="321.0" styleClass="label-title" text="Nombre de Réservation :">
+        </Label>
+        <Label fx:id="labelNbReservation" layoutX="296.0" layoutY="323.0" text="--------------------------------">
+        </Label>
+    </children>
+</AnchorPane>

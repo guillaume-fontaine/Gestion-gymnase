@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="anchor-view" stylesheets="@css/gymnase.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.trollgun.gymnase.controller.AssociationController">
+    <children>
+        <TableView fx:id="tableViewAssociation" layoutX="25.0" layoutY="25.0" onKeyReleased="#onKeyPressedAssociation" onMouseClicked="#onMouseClickedAssociation" prefHeight="250.0" prefWidth="550.0">
+            <columns>
+                <TableColumn fx:id="tableColumnReference" prefWidth="90.0" text="Références" />
+                <TableColumn fx:id="tableColumnResponsable" prefWidth="184.0" text="Responsable" />
+                <TableColumn fx:id="tableColumnAdresse" prefWidth="137.0" text="Adresse" />
+                <TableColumn fx:id="tableColumnVille" prefWidth="137.0" text="Ville" />
+            </columns>
+            <tooltip>
+                <Tooltip text="Double clique pour modifier" />
+            </tooltip>
+        </TableView>
+        <Button fx:id="buttonAjouter" layoutX="466.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClickAjouterAssociation" prefHeight="30.0" prefWidth="100.0" styleClass="button-1" text="Ajouter" />
+        <Button fx:id="buttonStopModification" disable="true" layoutX="32.0" layoutY="348.0" mnemonicParsing="false" onAction="#onClickStopModification" prefHeight="30.0" styleClass="button-1" text="Arréter la modification" />
+            <Label layoutX="32.0" layoutY="284.0" text="Références :">
+         <tooltip>
+                    <Tooltip fx:id="tooltipReferences" opacity="0.0" text="Vous ne pouvez modifier la reférences lors d'une modification" />
+         </tooltip></Label>
+            <Label layoutX="128.0" layoutY="284.0" text="Responsable : " />
+            <Label layoutX="312.0" layoutY="284.0" text="Adresse :" />
+            <Label layoutX="449.0" layoutY="284.0" text="Ville :" />
+              <TextField fx:id="txtFieldReference" layoutX="32.0" layoutY="302.0" prefHeight="25.0" prefWidth="75.0" promptText="Exemple : E" />
+            <TextField fx:id="txtFieldResponsable" layoutX="128.0" layoutY="302.0" prefWidth="170.0" promptText="Exemple : Moussa Darmanin" />
+            <TextField fx:id="txtFieldAdresse" layoutX="312.0" layoutY="302.0" maxWidth="1.7976931348623157E308" prefWidth="123.0" promptText="Exemple : Dur" />
+            <TextField fx:id="txtFieldVille" layoutX="449.0" layoutY="302.0" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="123.0" promptText="Exemple : Dur" />
+    </children>
+</AnchorPane>
